@@ -10,7 +10,7 @@
  
 #### 二、使用
 
-运行命令后，打开[127.0.0.1:6800](http://127.0.0.1:6800) 
+- 运行命令后，打开[127.0.0.1:6800](http://127.0.0.1:6800) 
     
 
         docker run -p 6800:6800 samge/scrapyd:latest
@@ -19,18 +19,11 @@
 
 <br>
 
-#### 一、编译docker镜像
-
-
-        docker-compose up --build
-
-
-
-<br>
-
 #### 三、其他说明
 
 如果有需要，可以自己编译并上传docker镜像到[https://hub.docker.com/](https://hub.docker.com/)
+
+        docker-compose up --build
 
 	    docker login
 	    docker images
