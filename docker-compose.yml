@@ -1,0 +1,16 @@
+version: '3'
+services:
+
+  scrapyd:
+    image: samge/scrapyd
+    build: .
+    ports:
+      - "6800:6800"
+    environment:
+      TZ: Asia/Shanghai
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 10s
+        max_attempts: 5
+        window: 100s
