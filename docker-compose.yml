@@ -1,16 +1,18 @@
 version: '3'
-services:
 
+services:
   scrapyd:
     image: samge/scrapyd
     build: .
-    ports:
+    ports:  # 这个必须暴露到本机，不然访问不到这个服务
       - "6800:6800"
     environment:
-      TZ: Asia/Shanghai
+      TZ: 'Asia/Shanghai'
     deploy:
       restart_policy:
         condition: on-failure
         delay: 10s
         max_attempts: 5
         window: 100s
+
+
