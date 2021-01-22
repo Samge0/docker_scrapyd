@@ -14,3 +14,4 @@ filetype==1.0.7
 pypinyin==0.39.1
 suds-jurko==0.6
 redis==3.5.3
+requests_html==0.10.0
